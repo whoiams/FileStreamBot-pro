@@ -10,19 +10,20 @@ from Adarsh import StartTime
 START_TEXT = """ Your Telegram DC Is : `{}`  """
 
 
-@StreamBot.on_message(filters.regex("maintainers😎"))
+@StreamBot.on_message(filters.regex("​🇲​​🇦​​🇮​​🇳​​🇹​​🇦​​🇮​​🇳​​🇪​​🇷​​🇸​
+"))
 async def maintainers(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Made By [GreyMatter's Bot](https://t.me/GreyMatter_Bots)",
+                    text="​🇭​​🇪​​🇱​​🇱​​🇴​​🇼​...❗ [​🇫​​🇮​​🇱​​🇲​ ​🇸​​🇹​​🇺​​🇩​​🇮​​🇴​](https://oshada1.epizy.com/)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Owner💻", url=f"https://t.me/GreyMatter_Owner")
+                                InlineKeyboardButton("𝘖𝘸𝘯𝘦𝘳💻", url=f"https://t.me/Gvimukthioshadar")
                             ]
                         ]
                     ),
@@ -30,25 +31,7 @@ async def maintainers(b,m):
                     disable_web_page_preview=True)
             
          
-@StreamBot.on_message(filters.regex("Subscribe ❤️"))
-async def follow_user(b,m):
-    try:
-       await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
-    except Exception:
-                await b.send_message(
-                    chat_id=m.chat.id,
-                    text="<B>HERE'S THE SUBSCRIBE LINK</B>",
-                    
-                    reply_markup=InlineKeyboardMarkup(
-                        [
-                            [
-                                InlineKeyboardButton("Subscribe ❤️", url=f"https://youtube.com/@GreyMattersYT")
-                            ]
-                        ]
-                    ),
-                    
-                    disable_web_page_preview=True)
-        
+
 
 @StreamBot.on_message(filters.regex("DC"))
 async def start(bot, update):
@@ -63,7 +46,7 @@ async def start(bot, update):
     
 @StreamBot.on_message(filters.command("list"))
 async def list(l, m):
-    LIST_MSG = "Hi! {} Here is a list of all my commands \n \n 1 . `start⚡️` \n 2. `help📚` \n 3. `login🔑` \n 4.`Subscribe ❤️` \n 5. `ping📡` \n 6. `status📊` \n 7. `DC` this tells your telegram dc \n 8. `maintainers😎` "
+    LIST_MSG = "Hi! {} ​🇭​​🇪​​🇷​​🇪​ ​🇮​​🇸​ ​🇦​ ​🇱​​🇮​​🇸​​🇹​ ​🇴​​🇫​ ​🇦​​🇱​​🇱​ ​🇲​​🇾​ ​🇨​​🇴​​🇲​​🇲​​🇦​​🇳​​🇩​​🇸​ \n \n 1 . `start⚡️` \n 2. `help📚` \n 3. `login🔑` \n 4.`Subscribe ❤️` \n 5. `ping📡` \n 6. `status📊` \n 7. `DC` this tells your telegram dc \n 8. `maintainers😎` "
     await l.send_message(chat_id = m.chat.id,
         text = LIST_MSG.format(m.from_user.mention(style="md"))
         
