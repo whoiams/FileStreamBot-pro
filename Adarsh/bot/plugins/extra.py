@@ -10,8 +10,7 @@ from Adarsh import StartTime
 START_TEXT = """ Your Telegram DC Is : `{}`  """
 
 
-@StreamBot.on_message(filters.regex("​🇲​​🇦​​🇮​​🇳​​🇹​​🇦​​🇮​​🇳​​🇪​​🇷​​🇸​
-"))
+@StreamBot.on_message(filters.regex("​🇲​​🇦​​🇮​​🇳​​🇹​​🇦​​🇮​​🇳​​🇪​​🇷​​🇸​"))
 async def maintainers(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
