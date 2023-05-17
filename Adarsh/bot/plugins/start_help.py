@@ -128,7 +128,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ Owner", url="t.me/vimukthioshada")]
+                [InlineKeyboardButton("💁‍♂️ Owner", url="t.me/vimukthioshada")],
+                        [InlineKeyboardButton("Film Studio", url="https://oshada1.epizy.com/?i=1")]
              
             ]
         )
